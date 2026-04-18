@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Rana — developer, designer, and builder." />
+  <title>Rana · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-dot"></span>
+      <span>Rana</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">Hi there, I'm</p>
+        <h1 class="hero__title">
+          <span class="gradient-text">Rana</span><span class="cursor">_</span>
+        </h1>
+        <h2 class="hero__subtitle">I build delightful products for the web.</h2>
+        <p class="hero__desc">
+          Full-stack developer and designer focused on crafting fast, accessible
+          interfaces and clean backends. Currently exploring AI-powered tooling.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>5+</strong><span>Years building</span></div>
+          <div><strong>30+</strong><span>Projects shipped</span></div>
+          <div><strong>∞</strong><span>Cups of coffee</span></div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2>About me</h2>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a developer who loves turning ideas into real, usable products.
+            I spend most of my time in <em>TypeScript</em>, <em>React</em>, and
+            <em>Node</em>, with frequent detours into <em>Python</em> and
+            <em>Rust</em> when the problem calls for it.
+          </p>
+          <p>
+            Outside of code, I'm into design systems, typography, and the
+            occasional long run. I believe great software feels invisible —
+            like it's just doing what you were already thinking.
+          </p>
+          <ul class="about__facts">
+            <li>Based in <strong>Somewhere on Earth</strong></li>
+            <li>Open to freelance &amp; collabs</li>
+            <li>Lifelong learner</li>
+          </ul>
+        </div>
+        <div class="about__card" aria-hidden="true">
+          <div class="about__card-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre class="about__code"><code><span class="tok-key">const</span> <span class="tok-var">rana</span> = {
+  role: <span class="tok-str">'Full-stack Developer'</span>,
+  stack: [<span class="tok-str">'TS'</span>, <span class="tok-str">'React'</span>, <span class="tok-str">'Node'</span>, <span class="tok-str">'Python'</span>],
+  obsessions: [
+    <span class="tok-str">'clean UI'</span>,
+    <span class="tok-str">'good DX'</span>,
+    <span class="tok-str">'fast builds'</span>,
+  ],
+  available: <span class="tok-key">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project__thumb" data-label="NB">
+            <div class="project__blob project__blob--a"></div>
+          </div>
+          <div class="project__body">
+            <h3>Nimbus Notes</h3>
+            <p>A local-first note-taking app with real-time sync, markdown, and end-to-end encryption.</p>
+            <ul class="tags">
+              <li>TypeScript</li><li>React</li><li>CRDT</li><li>Rust</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" aria-label="Live site">Live ↗</a>
+              <a href="#" aria-label="Source code">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb" data-label="PX">
+            <div class="project__blob project__blob--b"></div>
+          </div>
+          <div class="project__body">
+            <h3>Pixel Forge</h3>
+            <p>Browser-based image editor with layers, filters, and a plugin API. Runs entirely on WebAssembly.</p>
+            <ul class="tags">
+              <li>WASM</li><li>Canvas</li><li>Vite</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" aria-label="Live site">Live ↗</a>
+              <a href="#" aria-label="Source code">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb" data-label="AI">
+            <div class="project__blob project__blob--c"></div>
+          </div>
+          <div class="project__body">
+            <h3>Askari AI</h3>
+            <p>Open-source coding assistant that runs locally. Integrates with your editor over LSP.</p>
+            <ul class="tags">
+              <li>Python</li><li>LLM</li><li>LSP</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" aria-label="Live site">Live ↗</a>
+              <a href="#" aria-label="Source code">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb" data-label="DV">
+            <div class="project__blob project__blob--d"></div>
+          </div>
+          <div class="project__body">
+            <h3>Devlog</h3>
+            <p>Minimal blogging engine with a focus on reading flow, content indexing, and blazing-fast load times.</p>
+            <ul class="tags">
+              <li>Next.js</li><li>MDX</li><li>Edge</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" aria-label="Live site">Live ↗</a>
+              <a href="#" aria-label="Source code">Code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2>Skills &amp; tools</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Rust</li><li>Go</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul><li>React</li><li>Next.js</li><li>Svelte</li><li>Tailwind</li><li>Framer Motion</li><li>Vite</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul><li>Node.js</li><li>FastAPI</li><li>Postgres</li><li>Redis</li><li>GraphQL</li><li>tRPC</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tooling</h3>
+          <ul><li>Docker</li><li>GitHub Actions</li><li>AWS</li><li>Vercel</li><li>Figma</li><li>Playwright</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2>Let's build something</h2>
+      </div>
+      <div class="contact">
+        <p class="contact__lead">
+          Got a project in mind, an interesting problem, or just want to say hi?
+          My inbox is always open.
+        </p>
+        <a class="btn btn--primary btn--lg" href="mailto:hello@example.com">Say hello ↗</a>
+        <ul class="contact__socials">
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener">X</a></li>
+          <li><a href="mailto:hello@example.com">Email</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Rana. Designed &amp; built with care.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
